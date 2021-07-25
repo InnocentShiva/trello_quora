@@ -13,7 +13,15 @@ import org.springframework.context.annotation.Import;
 @Import(ServiceConfiguration.class)
 public class QuoraApiApplication {
     public static void main(String[] args) {
+
         SpringApplication.run(QuoraApiApplication.class, args);
+//        try {
+//            Class.forName("org.postgresql.Driver");
+//            //on classpath
+//        } catch(ClassNotFoundException e) {
+//            // not on classpath
+//            e.printStackTrace();
+//        }
     }
 }
 
